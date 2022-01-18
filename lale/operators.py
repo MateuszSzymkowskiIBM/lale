@@ -1617,7 +1617,7 @@ class IndividualOp(Operator):
             impl = class_()
         else:
             #Add loging
-            print(class_, **params_all)
+            print(class_, *params_all)
             impl = class_(**params_all)
 
         if self._should_configure_trained(impl):
